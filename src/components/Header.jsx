@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <>
-      <h1>Adalabers</h1>
-    </>
+    <header className="header">
+      <h1 className="header__title">Listado de Adalabers</h1>
+    </header>
   );
 }
 

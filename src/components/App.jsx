@@ -1,8 +1,14 @@
-import '../styles/App.scss';
+import "../styles/App.scss";
+import Api from "./api.json";
+import Header from "./Header";
+import TableAdalabers from "./TableAdalabers";
 
 function App() {
   return (
-    <p>Escribe aquí tu código HTML</p>
+    <>
+      <Header />
+      <TableAdalabers />
+    </>
   );
 }
 

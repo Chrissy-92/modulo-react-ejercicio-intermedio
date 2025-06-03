@@ -1,3 +1,5 @@
+import TableRow from "./TableRow";
+
 function TableAdalabers({ adalabers }) {
   return (
     <table className="table">
@@ -9,12 +11,8 @@ function TableAdalabers({ adalabers }) {
         </tr>
       </thead>
       <tbody>
-        {adalabers.map((item) => (
-          <tr key={item.id}>
-            <td>{item.name}</td>
-            <td>{item.counselor}</td>
-            <td>{item.speciality}</td>
-          </tr>
+        {adalabers.map((adalaberObj) => (
+          <TableRow key={adalaberObj.id} adalaberObj={adalaberObj} />
         ))}
       </tbody>
     </table>

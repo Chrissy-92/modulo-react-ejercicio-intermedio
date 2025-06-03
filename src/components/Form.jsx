@@ -1,15 +1,19 @@
-function Form() {
+function Form(handleInputFilter) {
   return (
     <form className="filters">
       <label htmlFor="filterName">Nombre:</label>
-      <input type="text" name="filterName" id="filterName" />
+      <input
+        onInput={handleInputFilter}
+        type="text"
+        name="filterName"
+        id="filterName"
+      />
       <label htmlFor="chooseTutor">Elije una Tutora:</label>
       <select
         className="input-select"
         name="chooseTutor"
         id="chooseTutor"
         value={""}
-        // onChange={handleTutor}
       >
         <option value="">Escoge una opción</option>
         <option value="yanelis">Yanelis</option>
